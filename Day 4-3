@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int n,i,c=0;
+  cin>>n;
+ 
+  for(i=1;i<=n;i++)
+  {
+      if(n%i==0)
+      c++;
+  }
+  if(n==1)
+  cout<<"none";
+  else if(c==2)
+  cout<<"prime";
+  else
+  cout<<"composite";
+  return 0;
+}
